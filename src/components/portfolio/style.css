@@ -1,0 +1,82 @@
+.portfolio_container{
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.portfolio_container h1{
+	font-size: 1.5rem;
+	margin: 20px auto;
+}
+
+.portfolio_container .filter{
+	display: flex;
+	margin: 2rem auto;
+}
+
+.portfolio_container select{
+	margin-left: 2rem;
+	border: 1px solid darkcyan;
+	border-radius: 10px ;
+	padding: 0 .5rem;
+	outline: none;
+}
+
+
+.portfolio_itens_container{
+	display: block;
+	justify-content: center;
+}
+
+.portfolio_item{
+	width: 100%;
+	margin: 5px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 20px 5px;
+	margin-bottom: 1rem;
+
+	box-shadow: 0 0 10px 0;
+
+	border-radius: 20px;
+
+	text-decoration: dotted;
+}
+.portfolio_item>div{
+	flex: 1;
+	padding: 1rem 2rem;
+	text-align: center;
+	font-size: large;
+}
+
+
+
+
+
+
+.portfolio_item--img{
+	width: 90%;
+	margin: 5% 0;
+}
+
+.portfolio_item--img img{
+	width: 100%;
+}
+
+@media(max-width: 720px){
+	.portfolio_item{
+		width: 100%;
+		flex-direction: column;
+	}
+
+	.portfolio_item p {
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		-webkit-line-clamp: 4;
+		height: 3rem; /* Adjust the height based on your design */
+		white-space: normal; /* Reset white-space to normal */
+		text-overflow: ellipsis;
+	  }
+}

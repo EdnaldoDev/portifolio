@@ -1,0 +1,32 @@
+.about_me{
+	background: rgba(223, 223, 232, .4);
+	width: 90%;
+	margin: 0 auto;
+	padding: 20px;
+	color: white;
+	margin-bottom: 50px;
+	border-radius: 10px;
+}
+
+.about_me h1{
+	margin-bottom: 15px;
+}
+
+
+.border_bottom_titles{
+	border: 1px solid white;
+	display: block;
+	width: 50px;
+}
+
+.about_me p{
+	margin-bottom: 10px;
+}
+
+
+
+@media(max-width: 500px){
+	.about_me p{
+		font-size: 15px;
+	}
+}

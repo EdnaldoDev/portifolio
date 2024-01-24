@@ -1,0 +1,14 @@
+footer{
+	width: 90%;
+	margin: 0 auto;
+	height: 100px;
+	background: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* color: white; */
+	margin-top: 50px;
+	border-radius: 12px 12px 0px 0px;
+
+	box-shadow: 0 0 10px 0;
+}
