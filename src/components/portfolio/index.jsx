@@ -21,6 +21,30 @@ import Finans from '../../assets/portfolioAssets/Captura de tela de 2022-01-23 0
 
 const portfolioItems = [
 	{
+		title:'myfood',
+		altText:'my food image ',
+		description: 'Myfood is a personal online Menu project that includes a cart feature, whatsapp simples integration and full responsive layout.',
+		imgSrc:'https://firebasestorage.googleapis.com/v0/b/gallery-40e70.appspot.com/o/images%2Fmyfoos.PNG?alt=media&token=36337415-fb4b-401b-b1cf-6336d6292ef8',
+		demoLink:'http://localhost:5173',
+		stack:['React']
+	},
+	{
+		title:'WebAutomatize',
+		altText:'web automatize image',
+		description:'A site to an agency of digital automation, with contact form 100% functional',
+		imgSrc:'https://firebasestorage.googleapis.com/v0/b/gallery-40e70.appspot.com/o/images%2FwebA.PNG?alt=media&token=34e4072a-bfec-4f02-ae48-e408d586f29a',
+		demoLink:'https://webautomatize.vercel.app/',
+		stack:['React']
+	},
+	{
+		title:'EyeStore',
+		altText:'eyeStore',
+		description:'This project is a simple ecommerce of mugs and t-shirts. Contain login, signup, and a functional cart feature.',
+		imgSrc:'https://firebasestorage.googleapis.com/v0/b/gallery-40e70.appspot.com/o/images%2FstoreLg.PNG?alt=media&token=82db8da2-7cf0-405f-90c4-83b8a7ef0663',
+		demoLink:'https://eyestore.vercel.app/',
+		stack:['React']
+	},
+	{
 	  title: 'Checkout Page',
 	  altText: 'Checkout Page',
 	  description: `This user-friendly page ensures a seamless journey from cart to completion,
@@ -29,7 +53,7 @@ const portfolioItems = [
 		this checkout page delivers a hassle-free process for a delightful customer experience.`,
 	  imgSrc: Checkout,
 	  demoLink: 'https://ednaldocs.github.io/checkoutPage/',
-	  stack: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux']
+	  stack: ['HTML', 'CSS', 'JavaScript', , 'Redux']
 	},
 	{
 	  title: 'Edie Home Page',
@@ -37,7 +61,7 @@ const portfolioItems = [
 	  altText: 'EdieHomePage page',
 	  demoLink: 'https://ednaldocs.github.io/homepage/',
 	  description: 'A visually appealing home page for Edie, showcasing a clean and intuitive design.',
-	  stack: ['HTML', 'CSS', 'JavaScript', 'React']
+	  stack: ['HTML', 'CSS', 'JavaScript', ]
 	},
 	{
 	  title: 'Error Page',
@@ -61,7 +85,7 @@ const portfolioItems = [
 	  altText: 'Interior Designer page',
 	  demoLink: 'https://ednaldocs.github.io/interior-consultant/',
 	  description: 'A portfolio page for interior design projects, featuring a stylish and functional layout.',
-	  stack: ['HTML', 'CSS', 'JavaScript', 'React']
+	  stack: ['HTML', 'CSS', 'JavaScript', ]
 	},
 	{
 	  title: 'Designer Team',
@@ -69,7 +93,7 @@ const portfolioItems = [
 	  altText: 'Myteam page',
 	  demoLink: 'https://ednaldocs.github.io/Myteam/',
 	  description: 'A collaborative platform for design teams, promoting effective communication and project management.',
-	  stack: ['HTML', 'CSS', 'JavaScript', 'React']
+	  stack: ['HTML', 'CSS', 'JavaScript', ]
 	},
 	{
 	  title: 'Página de receitas',
@@ -85,7 +109,7 @@ const portfolioItems = [
 	  altText: 'RickAndMorth page',
 	  demoLink: 'https://ednaldocs.github.io/rickAndMortyApi/',
 	  description: 'An informative page about Rick and Morty characters, providing interesting details and insights.',
-	  stack: ['HTML', 'CSS', 'JavaScript', 'React']
+	  stack: ['HTML', 'CSS', 'JavaScript', ]
 	},
 	{
 	  title: 'Random Quote motivacional',
@@ -101,7 +125,7 @@ const portfolioItems = [
 	  altText: 'Image Upload page',
 	  demoLink: 'https://ednaldocs.github.io/img-upload/',
 	  description: 'An image upload page, simplifying the process of sharing and managing images with user-friendly features.',
-	  stack: ['HTML', 'CSS', 'JavaScript', 'React']
+	  stack: ['HTML', 'CSS', 'JavaScript', ]
 	},
 	{
 	  title: 'Genius Game',
@@ -117,7 +141,7 @@ const portfolioItems = [
 	  altText: 'ToDo page',
 	  demoLink: 'https://ednaldocs.github.io/todoapp/',
 	  description: 'A task management ToDo app, helping users stay organized and productive with a simple and effective interface.',
-	  stack: ['HTML', 'CSS', 'JavaScript', 'React']
+	  stack: ['HTML', 'CSS', 'JavaScript', ]
 	},
 	{
 	  title: 'Clone Spotify',
@@ -125,7 +149,7 @@ const portfolioItems = [
 	  altText: 'SpotifyClone page',
 	  demoLink: 'https://ednaldocs.github.io/spotifyClone/',
 	  description: 'A Spotify clone page, replicating the music streaming experience with a responsive and visually appealing design.',
-	  stack: ['HTML', 'CSS', 'JavaScript', 'React']
+	  stack: ['HTML', 'CSS', 'JavaScript', ]
 	},
 	{
 	  title: 'Finans',
@@ -133,7 +157,7 @@ const portfolioItems = [
 	  altText: 'Finans page',
 	  demoLink: 'https://ednaldocs.github.io/finans/',
 	  description: 'A financial management page, empowering users to take control of their finances with an intuitive and feature-rich interface.',
-	  stack: ['HTML', 'CSS', 'JavaScript', 'React']
+	  stack: ['HTML', 'CSS', 'JavaScript', ]
 	}
   ];
   
@@ -147,10 +171,11 @@ function Portfolio() {
 			<div className='filter'>
 				<h5>Filter by stack</h5>
 				<select onChange={(e)=>setStack(e.target.value)}>
+					<option value='all'>All</option>
 					<option value="HTML">HTML</option>
 					<option value="CSS">CSS</option>
 					<option value="JavaScript">JavaScript</option>
-					<option value="React">React</option>
+					<option value="React">React</option> 
 				</select>
 			</div>
 			<div className='portfolio_itens_container'>
