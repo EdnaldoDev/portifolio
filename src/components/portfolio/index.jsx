@@ -25,7 +25,7 @@ const portfolioItems = [
 		altText:'my food image ',
 		description: 'Myfood is a personal online Menu project that includes a cart feature, whatsapp simples integration and full responsive layout.',
 		imgSrc:'https://firebasestorage.googleapis.com/v0/b/gallery-40e70.appspot.com/o/images%2Fmyfoos.PNG?alt=media&token=36337415-fb4b-401b-b1cf-6336d6292ef8',
-		demoLink:'http://localhost:5173',
+		demoLink:'https://pointfood.vercel.app/',
 		stack:['React']
 	},
 	{
