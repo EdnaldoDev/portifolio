@@ -57,7 +57,7 @@ function ContactMe(){
 						<input type="text" id='clientEmail' required/>
 					</div>
 					<div>
-						<label htmlFor="message">Nessage:</label>
+						<label htmlFor="message">Message:</label>
 						<textarea name="message" id="serviceDescrition" cols="30" rows="10" required></textarea>
 					</div>
 

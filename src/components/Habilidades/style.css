@@ -37,16 +37,18 @@
 
 @media(max-width: 600px){
 	.habilidades{
-		margin: 0px 20px;
+		margin: 0;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: start;
+		margin-top: 2rem;
 	}
 	.habilidade_container{
-		flex-wrap: nowrap;
-		overflow-x: scroll;
+		margin: 0;
 	}
 
 	.habilidade_container::-webkit-scrollbar-thumb{
 		background-color:  rgba(3, 4, 94,.4);
-		width: 4px;
 		height: 10px;
 	}
 
@@ -57,7 +59,7 @@
 ;
 	}
 
-	.habilidade_item{
-	
+	.habilidades h1{
+		flex: auto;
 	}
 }

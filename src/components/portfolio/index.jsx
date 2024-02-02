@@ -52,32 +52,8 @@ const portfolioItems = [
 		prioritizes simplicity without compromising functionality. With responsive elements and thoughtful details,
 		this checkout page delivers a hassle-free process for a delightful customer experience.`,
 	  imgSrc: Checkout,
-	  demoLink: 'https://ednaldocs.github.io/checkoutPage/',
+	  demoLink: 'https://ednaldocs.github.io/checkout-page/',
 	  stack: ['HTML', 'CSS', 'JavaScript', , 'Redux']
-	},
-	{
-	  title: 'Edie Home Page',
-	  imgSrc: EdieHomePage,
-	  altText: 'EdieHomePage page',
-	  demoLink: 'https://ednaldocs.github.io/homepage/',
-	  description: 'A visually appealing home page for Edie, showcasing a clean and intuitive design.',
-	  stack: ['HTML', 'CSS', 'JavaScript', ]
-	},
-	{
-	  title: 'Error Page',
-	  imgSrc: ErrorPage,
-	  altText: 'Error page',
-	  demoLink: 'https://ednaldocs.github.io/erro-404/',
-	  description: 'An error page with a creative design, providing a user-friendly experience even in unexpected situations.',
-	  stack: ['HTML', 'CSS', 'JavaScript']
-	},
-	{
-	  title: 'Gallery',
-	  imgSrc: Galery,
-	  altText: 'Galeria page',
-	  demoLink: 'https://ednaldocs.github.io/my-gallery/',
-	  description: 'An interactive gallery page, designed to showcase images in an elegant and engaging manner.',
-	  stack: ['HTML', 'CSS', 'JavaScript']
 	},
 	{
 	  title: 'Interior Designer',
@@ -85,14 +61,6 @@ const portfolioItems = [
 	  altText: 'Interior Designer page',
 	  demoLink: 'https://ednaldocs.github.io/interior-consultant/',
 	  description: 'A portfolio page for interior design projects, featuring a stylish and functional layout.',
-	  stack: ['HTML', 'CSS', 'JavaScript', ]
-	},
-	{
-	  title: 'Designer Team',
-	  imgSrc: Myteam,
-	  altText: 'Myteam page',
-	  demoLink: 'https://ednaldocs.github.io/Myteam/',
-	  description: 'A collaborative platform for design teams, promoting effective communication and project management.',
 	  stack: ['HTML', 'CSS', 'JavaScript', ]
 	},
 	{
@@ -112,35 +80,11 @@ const portfolioItems = [
 	  stack: ['HTML', 'CSS', 'JavaScript', ]
 	},
 	{
-	  title: 'Random Quote motivacional',
-	  imgSrc: RandomQuote,
-	  altText: 'RandomQuote page',
-	  demoLink: 'https://ednaldocs.github.io/randomQuote/',
-	  description: 'A motivational quotes page, delivering daily inspiration with a sleek and modern design.',
-	  stack: ['HTML', 'CSS', 'JavaScript']
-	},
-	{
 	  title: 'Imagens Upload',
 	  imgSrc: ImageUpload,
 	  altText: 'Image Upload page',
 	  demoLink: 'https://ednaldocs.github.io/img-upload/',
 	  description: 'An image upload page, simplifying the process of sharing and managing images with user-friendly features.',
-	  stack: ['HTML', 'CSS', 'JavaScript', ]
-	},
-	{
-	  title: 'Genius Game',
-	  imgSrc: GeniusGame,
-	  altText: 'Genius Game page',
-	  demoLink: 'https://ednaldocs.github.io/geniusGame/',
-	  description: 'An interactive Genius Game, challenging users\' memory and reflexes in an engaging way.',
-	  stack: ['HTML', 'CSS', 'JavaScript']
-	},
-	{
-	  title: 'ToDo - lista de tarefas',
-	  imgSrc: ToDo,
-	  altText: 'ToDo page',
-	  demoLink: 'https://ednaldocs.github.io/todoapp/',
-	  description: 'A task management ToDo app, helping users stay organized and productive with a simple and effective interface.',
 	  stack: ['HTML', 'CSS', 'JavaScript', ]
 	},
 	{
@@ -184,7 +128,7 @@ function Portfolio() {
 					if(stack==='all') return true;
 					else if(item.stack.includes(stack)) return item;
 				}).map((item)=>(
-					<a href={item.demoLink} className='portfolio_item' target='_blank'>
+					<a href={item.demoLink} className='portfolio_item' target='_blank' rel='noreferrer'>
 						<div className='portfolio_item--img'>
 							<img src={item.imgSrc} alt={item.altText}/>
 						</div>

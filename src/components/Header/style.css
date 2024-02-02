@@ -15,46 +15,59 @@ header{
 	box-shadow: 0 0 10px 0 ;
 }
 
-.navbar{
+
+nav{
 	width: 100%;
-	background: transparent;
 	/*background: rgba(3, 4, 94,1);*/
+	color: #252525;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
 
-}
 
-
-.navbar-dark .navbar-nav .nav-link{
-	text-align: center;
-	/* color: white; */
 	
 }
 
 
-/*
-.actionMenu{
-	display: none;
-	position: absolute;
-	top: 10px;
-	right: 20px;
-	font-size: 30px;
-	color: rgba(144, 224, 239, 1.0);
-	z-index: 111;
-	transform: rotate(90deg);
+nav a{
+	text-align: center;
+	margin:1rem auto;
 }
 
-	#checkbox-menu{
-		display: none;
-	}
+#navbarNav{
+	flex: .5;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
-
-nav ul{
+#ulNavbar{
 	list-style: none;
 	display: flex;
-	justify-content: space-around;
+	margin: 0;
+	width: 100%;
+}
+#ulNavbar li{
+	flex: 1;
+	font-size: 1rem;
+	text-align: center;
 }
 
-nav ul a{
-	padding: 5px 10px;
-	
+#ulNavbar li:hover{
+	background-color: whitesmoke;
 }
-*/
+
+#ulNavbar .active{
+	border-bottom: 1px solid #252525;
+}
+
+nav .navbar-toggler-icon {
+	color: red;/* Cor do ícone do botão hambúrguer */
+  }
+
+
+  @media screen and (min-width:720px) {
+		nav{
+			flex-direction: row;
+		}
+  }

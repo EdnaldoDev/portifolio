@@ -24,6 +24,7 @@
 	align-items: center;
 	justify-self: unset;
 	margin-top: 2rem;
+	min-height: 80vh;
 
 }
 .contact_me h1{

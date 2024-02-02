@@ -43,6 +43,12 @@
 
 	text-decoration: dotted;
 }
+
+.portfolio_item:hover{
+	color:rgb(132, 147, 209)
+}
+
+
 .portfolio_item>div{
 	flex: 1;
 	padding: 1rem 2rem;
