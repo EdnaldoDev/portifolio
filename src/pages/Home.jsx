@@ -18,7 +18,7 @@ function Home() {
 			<div className='home__container'>
 				<div>
 					<h1>Web Front-End Developer</h1>
-					<p>Hey, i´m Ednaldo Cavalcante, a front-end developer based in São Paulo - Brazil</p>
+					<p>Hey, i'm Ednaldo Cavalcante, a front-end developer based in São Paulo - Brazil</p>
 
 					<div className='iconsSocial'>
 						<a href="https://github.com/ednaldoCS" target='_blank' rel='noreferrer'><i className="fab fa-github-square"></i></a>

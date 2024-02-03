@@ -39,13 +39,15 @@ nav a{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	
 }
 
 #ulNavbar{
+	width: 100%;
 	list-style: none;
 	display: flex;
 	margin: 0;
-	width: 100%;
+	padding:0;
 }
 #ulNavbar li{
 	flex: 1;
